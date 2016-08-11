@@ -1,16 +1,17 @@
 package jp.qqjy.android.demo_timeline.adapter;
 
-import java.util.List;
-
-import jp.qqjy.android.demo_timeline.R;
-import jp.qqjy.android.demo_timeline.bean.TimeLineContentBean;
-import jp.qqjy.android.demo_timeline.bean.TimeLineTitleBean;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
+
+import java.util.List;
+
+import jp.qqjy.android.demo_timeline.R;
+import jp.qqjy.android.demo_timeline.bean.TimeLineContentBean;
+import jp.qqjy.android.demo_timeline.bean.TimeLineTitleBean;
 
 public class AgendaListAdapter extends BaseExpandableListAdapter {
 
@@ -83,21 +84,13 @@ public class AgendaListAdapter extends BaseExpandableListAdapter {
 		} else {
 			holder = new ChildViewHolder();
 			convertView = inflater.inflate(R.layout.timeline_content, null);
-			holder.detailTime = (TextView) convertView.findViewById(R.id.time);
 			holder.auther = (TextView) convertView.findViewById(R.id.auther);
 			holder.contactCount = (TextView) convertView.findViewById(R.id.contacts);
 			holder.content = (TextView) convertView.findViewById(R.id.content);
-			holder.back = (TextView) convertView.findViewById(R.id.back);
-			holder.thumbs = (TextView) convertView.findViewById(R.id.good);
-			holder.more = (TextView) convertView.findViewById(R.id.more);
 		}
-		holder.detailTime.setText(bean.getDetaiTime());
 		holder.auther.setText(bean.getAutherName());
 		holder.contactCount.setText("参与者" + bean.getContactCounts() + "人" + " - 10分钟前");
 		holder.content.setText(bean.getContent());
-		holder.thumbs.setText("赞(" + bean.getThumbs() + ")个");
-		holder.more.setText("更多");
-		holder.back.setText("回复(" + bean.getAnswer() + ")条");
 
 		convertView.setTag(holder);
 		return convertView;
@@ -113,12 +106,9 @@ public class AgendaListAdapter extends BaseExpandableListAdapter {
 	}
 
 	private class ChildViewHolder {
-		public TextView detailTime;
+
 		public TextView auther;
 		public TextView contactCount;
-		public TextView back;
-		public TextView thumbs;
-		public TextView more;
 		public TextView content;
 	}
 

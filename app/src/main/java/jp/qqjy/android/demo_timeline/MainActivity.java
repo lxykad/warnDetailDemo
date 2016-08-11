@@ -1,17 +1,18 @@
 package jp.qqjy.android.demo_timeline;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import jp.qqjy.android.demo_timeline.adapter.AgendaListAdapter;
-import jp.qqjy.android.demo_timeline.bean.TimeLineContentBean;
-import jp.qqjy.android.demo_timeline.bean.TimeLineTitleBean;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnGroupClickListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import jp.qqjy.android.demo_timeline.adapter.AgendaListAdapter;
+import jp.qqjy.android.demo_timeline.bean.TimeLineContentBean;
+import jp.qqjy.android.demo_timeline.bean.TimeLineTitleBean;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -44,7 +45,7 @@ public class MainActivity extends ActionBarActivity {
 		expandlistView.setOnGroupClickListener(new OnGroupClickListener() {
 			@Override
 			public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
-				return true;
+				return false;//true不可点击
 			}
 		});
 

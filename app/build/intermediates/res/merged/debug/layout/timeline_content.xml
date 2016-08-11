@@ -3,37 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:orientation="horizontal" >
-
-    <LinearLayout
-        android:id="@+id/detaitime_layout"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:paddingLeft="15dp"
-            android:text="16:15"
-            android:textColor="#999999" >
-        </TextView>
-    </LinearLayout>
+    android:orientation="horizontal">
 
     <FrameLayout
+        android:id="@+id/line_layout"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginLeft="20dp" >
+        android:layout_marginLeft="20dp">
 
         <TextView
             android:id="@+id/timeline1"
             android:layout_width="2dp"
             android:layout_height="fill_parent"
             android:layout_gravity="center"
-            android:background="#9999" />
+            android:background="#999999" />
 
         <ImageView
             android:id="@+id/timeimage"
@@ -47,69 +30,65 @@
     <LinearLayout
         android:id="@+id/content_layout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
+        android:layout_height="match_parent"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:background="#eee"
-        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/line_layout"
         android:orientation="vertical"
         android:paddingLeft="3dp"
         android:paddingRight="3dp"
-        android:paddingTop="5dp" >
-
-        <TextView
-            android:id="@+id/auther"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="Sinya" />
-
-        <TextView
-            android:id="@+id/contacts"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="参与者 15人 提前10分钟" />
-
-        <TextView
-            android:id="@+id/content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="内容"
-            android:textColor="#999999" >
-        </TextView>
+        android:paddingTop="5dp">
 
         <LinearLayout
+
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#9999"
-            android:orientation="horizontal" >
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/back"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="2"
-                android:gravity="center"
-                android:text="回复" />
+                android:id="@+id/detail_time"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="10:30" />
 
-            <TextView
-                android:id="@+id/good"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="2"
-                android:gravity="center"
-                android:text="点赞" />
 
-            <TextView
-                android:id="@+id/more"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="更多" />
         </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius_rect_main_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#fff"
+                android:id="@+id/auther"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Sinya" />
+
+            <TextView
+                android:textColor="#fff"
+                android:id="@+id/contacts"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="参与者 15人 提前10分钟" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:textColor="#fff"/>
+
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
 </LinearLayout>
