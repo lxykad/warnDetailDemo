@@ -1,58 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_vertical">
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="#343344">
 
     <FrameLayout
+        android:layout_marginLeft="10dp"
         android:id="@+id/fram_layout"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="#343344">
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/timeline"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#a0a0a0" />
 
         <ImageView
             android:id="@+id/timeimage"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/agenda0" />
-
-        <View
-            android:id="@+id/timeline"
-            android:layout_width="2dp"
-            android:layout_height="fill_parent"
-            android:layout_marginLeft="29dp"
-            android:background="#f00" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="50dp">
-
-            <ImageView
-                android:id="@+id/img_arrow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/arrow_down" />
-
-            <TextView
-                android:id="@+id/time"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/img_arrow"
-                android:paddingLeft="20dp"
-                android:text="2015-7-13"
-                android:textColor="#fff" />
-
-        </RelativeLayout>
+            android:src="@drawable/time_line_group" />
 
     </FrameLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_down" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_arrow"
+            android:text="2015-7-13"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

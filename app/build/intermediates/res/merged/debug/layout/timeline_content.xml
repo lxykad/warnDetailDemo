@@ -3,20 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
+    android:background="#292838"
     android:orientation="horizontal">
 
     <FrameLayout
         android:id="@+id/line_layout"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginLeft="20dp">
+        android:layout_marginLeft="10dp">
 
-        <TextView
+        <View
             android:id="@+id/timeline1"
             android:layout_width="2dp"
             android:layout_height="fill_parent"
             android:layout_gravity="center"
-            android:background="#999999" />
+            android:background="#a0a0a0" />
 
         <ImageView
             android:id="@+id/timeimage"
@@ -24,7 +25,7 @@
             android:layout_height="20dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/agenda0" />
+            android:src="@drawable/time_line_child" />
     </FrameLayout>
 
     <LinearLayout
@@ -50,50 +51,106 @@
                 android:id="@+id/detail_time"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:text="10:30" />
+                android:text="10:30"
+                android:textColor="#a0a0a0"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
 
         <RelativeLayout
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:background="@drawable/shape_radius_rect_main_color"
             android:padding="10dp">
 
             <ImageView
-                android:layout_marginRight="10dp"
                 android:id="@+id/avatar"
-                android:layout_width="50dp"
-                android:layout_height="70dp"
+                android:layout_width="110dp"
+                android:layout_height="83dp"
+                android:layout_marginRight="10dp"
                 android:src="@drawable/meinv" />
 
-            <TextView
-                android:id="@+id/tv_speed"
+            <RelativeLayout
+                android:id="@+id/speed_layout"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_toRightOf="@+id/avatar"
-                android:text="时速：120"
-                android:textColor="#fff" />
-
-            <TextView
-                android:id="@+id/tv_location"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_below="@+id/tv_speed"
-                android:layout_toRightOf="@+id/avatar"
-                android:text="位置：上海"
-                android:textColor="#fff" />
-
-            <TextView
-                android:id="@+id/tv_gps"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_location"
-                android:layout_toRightOf="@+id/avatar"
-                android:text="坐标：12.3022321,55.6456541"
-                android:textColor="#fff" />
+                android:layout_toRightOf="@+id/avatar">
+
+                <TextView
+                    android:id="@+id/speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时速："
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_speed_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/speed"
+                    android:text="12000000000000"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/speed_layout"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/avatar">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="位置："
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/address"
+                    android:text="1200000000"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gps_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_layout"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/avatar">
+
+                <TextView
+                    android:id="@+id/gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="坐标："
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_gps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/gps"
+                    android:text="1200000000"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
 
         </RelativeLayout>
 

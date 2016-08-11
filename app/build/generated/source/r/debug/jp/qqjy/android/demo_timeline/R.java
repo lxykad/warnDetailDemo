@@ -1418,6 +1418,8 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020037;
         public static final int meinv=0x7f020038;
         public static final int shape_radius_rect_main_color=0x7f020039;
+        public static final int time_line_child=0x7f02003a;
+        public static final int time_line_group=0x7f02003b;
     }
     public static final class id {
         public static final int action_bar=0x7f0b0031;
@@ -1433,8 +1435,10 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0b002e;
         public static final int action_mode_bar_stub=0x7f0b002d;
         public static final int action_mode_close_button=0x7f0b0020;
-        public static final int action_settings=0x7f0b004d;
+        public static final int action_settings=0x7f0b0053;
         public static final int activity_chooser_view_content=0x7f0b0021;
+        public static final int address=0x7f0b004a;
+        public static final int address_layout=0x7f0b0049;
         public static final int always=0x7f0b0016;
         public static final int avatar=0x7f0b0045;
         public static final int beginning=0x7f0b0013;
@@ -1452,13 +1456,15 @@ containing a value of this type.
         public static final int expand_activities_button=0x7f0b0022;
         public static final int expanded_menu=0x7f0b0028;
         public static final int expandlist=0x7f0b003f;
-        public static final int fram_layout=0x7f0b0049;
+        public static final int fram_layout=0x7f0b004f;
+        public static final int gps=0x7f0b004d;
+        public static final int gps_layout=0x7f0b004c;
         public static final int home=0x7f0b0004;
         public static final int homeAsUp=0x7f0b000d;
         public static final int icon=0x7f0b0026;
         public static final int ifRoom=0x7f0b0018;
         public static final int image=0x7f0b0023;
-        public static final int img_arrow=0x7f0b004b;
+        public static final int img_arrow=0x7f0b0051;
         public static final int line_layout=0x7f0b0040;
         public static final int listMode=0x7f0b0009;
         public static final int list_item=0x7f0b0025;
@@ -1483,17 +1489,19 @@ containing a value of this type.
         public static final int showCustom=0x7f0b000f;
         public static final int showHome=0x7f0b0010;
         public static final int showTitle=0x7f0b0011;
+        public static final int speed=0x7f0b0047;
+        public static final int speed_layout=0x7f0b0046;
         public static final int split_action_bar=0x7f0b0007;
         public static final int submit_area=0x7f0b003c;
         public static final int tabMode=0x7f0b000b;
-        public static final int time=0x7f0b004c;
+        public static final int time=0x7f0b0052;
         public static final int timeimage=0x7f0b0042;
-        public static final int timeline=0x7f0b004a;
+        public static final int timeline=0x7f0b0050;
         public static final int timeline1=0x7f0b0041;
         public static final int title=0x7f0b0027;
-        public static final int tv_gps=0x7f0b0048;
-        public static final int tv_location=0x7f0b0047;
-        public static final int tv_speed=0x7f0b0046;
+        public static final int tv_address=0x7f0b004b;
+        public static final int tv_gps=0x7f0b004e;
+        public static final int tv_speed_value=0x7f0b0048;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b0012;
         public static final int withText=0x7f0b001a;

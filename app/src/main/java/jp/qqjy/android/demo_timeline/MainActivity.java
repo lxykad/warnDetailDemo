@@ -63,7 +63,7 @@ public class MainActivity extends ActionBarActivity {
         });
 
     }
-    
+
     /**
      * 以下是模拟数据， 随便复制粘贴这几天的新闻<br>
      * 实际的数据，就看项目需求了<br>
