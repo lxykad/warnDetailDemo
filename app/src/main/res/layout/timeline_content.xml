@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@+id/line_layout"
@@ -42,7 +42,6 @@
         android:paddingTop="5dp">
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -53,41 +52,50 @@
                 android:layout_height="20dp"
                 android:text="10:30" />
 
-
         </LinearLayout>
 
 
-        <LinearLayout
-            android:padding="10dp"
+        <RelativeLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/shape_radius_rect_main_color"
-            android:orientation="vertical">
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:src="@drawable/meinv" />
 
             <TextView
-                android:textColor="#fff"
-                android:id="@+id/auther"
+                android:id="@+id/tv_speed"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:text="Sinya" />
+                android:layout_toRightOf="@+id/avatar"
+                android:text="时速：120"
+                android:textColor="#fff" />
 
             <TextView
-                android:textColor="#fff"
-                android:id="@+id/contacts"
+                android:id="@+id/tv_location"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:text="参与者 15人 提前10分钟" />
+                android:layout_below="@+id/tv_speed"
+                android:layout_toRightOf="@+id/avatar"
+                android:text="位置：上海"
+                android:textColor="#fff" />
 
             <TextView
-                android:id="@+id/content"
+                android:id="@+id/tv_gps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="内容"
-                android:textColor="#fff"/>
+                android:layout_below="@+id/tv_location"
+                android:layout_toRightOf="@+id/avatar"
+                android:text="坐标：12.3022321,55.6456541"
+                android:textColor="#fff" />
 
-
-        </LinearLayout>
-
+        </RelativeLayout>
 
     </LinearLayout>
 

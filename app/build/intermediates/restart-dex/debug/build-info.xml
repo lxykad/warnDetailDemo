@@ -4,39 +4,39 @@
     api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="28440573391581" >
+    timestamp="31640723584567" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="65" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="12" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
-        location="D:\learn\fork\demo_TimeLine\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
+        location="D:\learn\fork\demo_TimeLine\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+        type="DEX" />
 
-    <build timestamp="28100893221808" >
+    <build timestamp="31000508504313" >
         <artifact
             location="D:\learn\fork\demo_TimeLine\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="28293728717832" >
-        <artifact
-            location="D:\learn\fork\demo_TimeLine\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="28440573391581" >
+    <build timestamp="31194790312454" >
         <artifact
             location="D:\learn\fork\demo_TimeLine\app\build\intermediates\res\resources-debug.ap_"
             type="RESOURCES" />
+    </build>
+    <build timestamp="31640723584567" >
+        <artifact
+            location="D:\learn\fork\demo_TimeLine\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>
