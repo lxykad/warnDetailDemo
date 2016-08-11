@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\androidSdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="D:\learn\fork\demo_TimeLine\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-21.0.3_d82fbdacf91c424c187a39dc975341d561fc55ad\classes.dex" />
+    </item>
+    <item
+        jar="D:\learn\fork\demo_TimeLine\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="dd0161f06fb9da6c767261c2a205d45563586ae8">
+        <dex dex="D:\learn\fork\demo_TimeLine\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_dd0135371028b1f76a3feae357a229a65cebe67a\classes.dex" />
+    </item>
+    <item
+        jar="D:\learn\fork\demo_TimeLine\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="D:\learn\fork\demo_TimeLine\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-21.0.3_57b687b233e9d3ec7ec6a2b3f5047328231c37ea\classes.dex" />
+    </item>
+    <item
+        jar="D:\learn\fork\demo_TimeLine\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\learn\fork\demo_TimeLine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-21.0.3_767a5b60e14c1ec26e44e88760e164cf02933129\classes.dex" />
+    </item>
+    <item
+        jar="D:\learn\fork\demo_TimeLine\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="D:\learn\fork\demo_TimeLine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-21.0.3_bb635a960ebbdab9f20ed3416015ad7043fc54c2\classes.dex" />
+    </item>
+    <item
+        jar="D:\learn\fork\demo_TimeLine\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="293523054917aedde00dd97bde9cf01f34ed7678">
+        <dex dex="D:\learn\fork\demo_TimeLine\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_abe290a6d6e4e7c6d92d145738f7749a183c4d67\classes.dex" />
+    </item>
+
+</items>
